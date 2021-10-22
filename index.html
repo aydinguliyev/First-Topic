@@ -4,15 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <head></head>
-    <nav></nav>
+    <header>
+      <h1>Customer Info</h1>
+    </header>
     <div>
-      <section></section>
-      <aside></aside>
+      <div class="topic">
+        <p>FirstName</p>
+        <input type="text" placeholder="Name" />
+        <input type="text" placeholder="Surname" />
+        <input type="button" value="Submit" />
+      </div>
+      <br />
+      <div class="topic">
+        <p>Please select your favority Web language:</p>
+        <br />
+        <input type="radio" label="HTML" name="radio" /><label> HTML</label
+        ><br />
+        <input type="radio" label="CSS" name="radio" /><label> CSS</label><br />
+        <input type="radio" label="JavaScript" name="radio" /><label>
+          JavaScript</label
+        ><br />
+      </div>
+      <br />
+      <div class="topic">
+        <p>Please select framework:</p>
+        <br />
+        <label for="cars">Choose: </label>
+        <select id="cars" name="carlist" form="carform">
+          <br />
+          <option value="React">React</option>
+          <option value="Angular">Angular</option>
+          <option value="Vue">Vue</option></select
+        ><br />
+      </div>
+      <br />
+      <p>Add info:</p>
+      <textarea name="123" rows="10" cols="30"></textarea><br />
+      <div class="topic">
+        <input type="range" list="steplist" /><datalist id="steplist">
+          <option value="0"></option>
+          <option value="10"></option>
+          <option value="20"></option>
+          <option value="30"></option>
+          <option value="40"></option>
+          <option value="50"></option>
+          <option value="60"></option>
+          <option value="70"></option>
+          <option value="80"></option>
+          <option value="90"></option>
+          <option value="100"></option>
+        </datalist>
+      </div>
+      <br />
     </div>
-    <footer></footer>
   </body>
 </html>
